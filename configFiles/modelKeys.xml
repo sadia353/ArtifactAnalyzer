@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The type attribute for each key denotes data values like text, string, double, and float. They correspond 
+	 to Solr schema   
+	 NOTE: When new keys are added, it should be ensured that the code to extract
+	 their values has been added in their corresponding model file  -->
+<model_keys>
+	<model class_name="model.DefaultModel">  <!-- If new keys added, need to provide key-specific extraction code -->
+		<key type="">id</key>
+		<key type="">author</key>
+		<key type="s">file_name</key>
+		<key type="i">size_kb</key>
+		<key type="t">machine_name</key>
+		<key type="tdt">date_created</key>
+		<key type="tdt">date_modified</key>
+		<key type="t">content_type</key>
+		<key type="t">document_type</key>
+		<key type="s">file_path</key>	
+	</model>
+	<model class_name="model.ProvTemplateExcel"> 
+		<key type="tdt">date</key>
+		<key type="t">sample_name</key> 
+		<key type="t">purpose_of_the_experiment</key>
+		<key type="t">notes</key>
+		<key type="t">substrate_preparation</key>
+		<key type="t">coating_type</key>
+		<key type="t">substrate_material</key>
+		<key type="t">surface</key>
+		<key type="t">pulse_width</key>
+		<key type="t">pulse_shape</key>
+		<key type="t">environment</key>
+		<key type="t">average_fluence</key>
+		<key type="d">number_of_sites</key>
+		<key type="d">number_of_shots</key>
+		<key type="t">site_preparation</key>
+		<key type="t">average_site_separation</key>
+		<key type="t">pre-diagnostic</key>
+		<key type="t">post_diagnostic</key>
+		<key type="t">shot_diagnostic</key>
+		<key type="t">shot_plan</key>
+		<key type="t">location</key>		
+	</model>
+	<model class_name="model.ShotNumberJpeg">  <!-- If new keys added, need to provide key-specific extraction code -->
+		<key type="f">image_height</key>
+		<key type="f">image_width</key>		
+	</model>
+	<model class_name="model.ShotNumberPng">  <!-- If new keys added, need to provide key-specific extraction code -->
+		<key type="f">image_height</key> 
+		<key type="f">image_width</key>		
+	</model>
+</model_keys>

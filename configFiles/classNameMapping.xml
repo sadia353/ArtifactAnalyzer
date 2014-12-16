@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The class name should be the fully qualified class name that includes packages -->
+<classname_mapping>
+	<directory dir_pattern="Experiment_">
+		<file_type value="excel">
+			<model_classname>model.ProvTemplateExcel</model_classname>
+		</file_type>
+		<file_type value ="text">
+			<model_classname>model.TextFileKeyValue</model_classname>
+		</file_type>
+		<file_type value = "jpeg">
+			<model_classname>model.ShotNumberJpeg</model_classname>
+		</file_type>
+		<file_type value = "png">
+			<model_classname>model.ShotNumberPng</model_classname>
+		</file_type>
+	</directory>
+	<directory dir_pattern="Sample_">
+		<file_type value ="excel">
+			<model_classname>model.ProvTemplateExcel</model_classname>
+		</file_type>
+		<file_type value ="text">
+			<model_classname>model.TextFileKeyValue</model_classname>
+		</file_type>
+		<file_type value = "jpeg">
+			<model_classname>model.ShotNumberJpeg</model_classname>
+		</file_type>
+		<file_type value = "png">
+			<model_classname>model.ShotNumberPng</model_classname>
+		</file_type>
+	</directory>	
+</classname_mapping>
+
+
